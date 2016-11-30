@@ -57,6 +57,7 @@
               'urn:x-cast:sharpcaster.custom');
         // handler for the CastMessageBus message event
         window.messageBus.onMessage = function(event) {
+	  displayText("Does it even get here?");
           console.log('Message [' + event.senderId + ']: ' + event.data);
           // display the message from the sender
           displayText(event.data);
