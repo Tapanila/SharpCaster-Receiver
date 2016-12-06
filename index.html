@@ -22,7 +22,7 @@
     <title>SharpCaster custom receiver</title>
   </head>
   <body>
-	<DIV id="message">Send me a message</DIV>
+    <iframe id="srcFrame" style="width:1280px;height:720px"></iframe>
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
     <script type="text/javascript">
       window.onload = function() {
@@ -73,7 +73,7 @@
       // utility function to display the text message in the input field
       function displayText(text) {
         console.log(text);
-        document.getElementById("message").innerHTML=text;
+        document.getElementById("srcFrame").src=text;
         window.castReceiverManager.setApplicationState(text);
       };
     </script>
