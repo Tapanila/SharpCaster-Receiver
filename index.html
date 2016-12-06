@@ -54,7 +54,7 @@
         // create a CastMessageBus to handle messages for a custom namespace
         window.messageBus =
           window.castReceiverManager.getCastMessageBus(
-              'urn:x-cast:sharpcaster.custom',"JSON");
+              'urn:x-cast:sharpcaster',"JSON");
         // handler for the CastMessageBus message event
         window.messageBus.onMessage = function(event) {
 	  displayText("Does it even get here?");
